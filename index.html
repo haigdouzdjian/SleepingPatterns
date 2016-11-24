@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sleeping Patterns Mockup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600i" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+
+<body>
+
+    <head>
+
+        <body>
+            <div class="post" id="intro">
+                <div class="inner">
+                    <h1>Sleeping Patterns</h1>
+                    <a href="#second">
+                        <div class="arrow"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="post" id="second">
+                <div class="inner">
+                    <div class="people" id="finn">
+                        <h3><span>Finn Sagal</span></h3>
+                        <p>Guitar + Vocals</p>
+                    </div>
+                    <div class="people" id="alex">
+                        <h3><span>Alex Barsom</span></h3>
+                        <p>Guitar</p>
+                    </div>
+                    <div class="people" id="haig">
+                        <h3><span>Haig Manoukian</span></h3>
+                        <p>Bass</p>
+                    </div>
+                    <div class="people" id="joon">
+                        <h3><span>Joon Ahn</span></h3>
+                        <p>Drums</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post" id="third">
+                <div class="inner">
+                    <iframe style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/album=4190975926/size=large/bgcol=ffffff/linkcol=555D6A/minimal=true/transparent=true/" seamless><a href="http://sleepingpatternsband.bandcamp.com/album/sleeping-patterns">Sleeping Patterns by Sleeping Patterns</a></iframe>
+                    <iframe style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/track=2339110622/size=large/bgcol=ffffff/linkcol=555D6A/minimal=true/transparent=true/" seamless><a href="http://sleepingpatternsband.bandcamp.com/track/runaway-demo">Runaway (Demo) by Sleeping Patterns</a></iframe>
+                    <iframe style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/track=276433099/size=large/bgcol=ffffff/linkcol=555D6A/minimal=true/transparent=true/" seamless><a href="http://sleepingpatternsband.bandcamp.com/track/couch-demo">Couch (Demo) by Sleeping Patterns</a></iframe>
+                </div>
+            </div>
+            <div class="post" id="closing">
+                <div class="inner">
+                    <h4>&copy; 2016 Sleeping Patterns</h4>
+                    <h4>Made with <span class="love">love</span> by <a href="https://haigdouzdjian.github.io/"><span class="hd">Haig Douzdjian</span></a></h4>
+                </div>
+            </div>
+        </body>
+    </head>
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
